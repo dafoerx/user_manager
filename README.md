@@ -2,6 +2,8 @@
 
 #### 作者
 Yuan-Programmer
+1.  CSDN个人主页地址：[https://blog.csdn.net/weixin_47971206](https://blog.csdn.net/weixin_47971206)
+2.  各技术教学，项目实战开发教学文章集合：[https://blog.csdn.net/weixin_47971206/article/details/121368075](https://blog.csdn.net/weixin_47971206/article/details/121368075)
 
 #### 介绍
 CSDN中的所有SpringBoot项目开源，持续更新新项目、新教学文章
@@ -31,6 +33,3 @@ CSDN中的所有SpringBoot项目开源，持续更新新项目、新教学文章
 
 
 #### 特技
-
-1.  CSDN个人主页地址：[https://blog.csdn.net/weixin_47971206](https://blog.csdn.net/weixin_47971206)
-2.  各技术教学，项目实战开发教学文章集合：[https://blog.csdn.net/weixin_47971206/article/details/121368075](https://blog.csdn.net/weixin_47971206/article/details/121368075)
