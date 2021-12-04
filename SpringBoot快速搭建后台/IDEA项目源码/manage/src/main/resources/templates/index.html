@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Yuan-Programmer" />
+
+	<title>后台管理</title>
+	<link href="/static/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+	<link href="/static/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+	<link href="/static/css/plugins/iCheck/custom.css" rel="stylesheet">
+	<link href="/static/css/animate.min.css" rel="stylesheet">
+	<link href="/static/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="ibox float-e-margins">
+				<div class="ibox-title">
+					<h5>用户管理</h5>
+					<div class="ibox-tools">
+						<button id="addUserBtn" class="btn btn-xs btn-rounded btn-primary"><i class="fa fa-plus"></i> 添加</button>
+					</div>
+				</div>
+				<div class="ibox-content">
+					<div class="input-group">
+						<input type="text" placeholder="请输入关键词" class="input-sm form-control"> <span class="input-group-btn">
+							        <button type="button" class="btn btn-sm btn-primary"><i class="fa fa-search"> 搜索</i> </button> </span>
+					</div>
+					<table class="footable table table-stripped toggle-arrow-tiny">
+						<thead>
+						<tr>
+							<th>编号</th>
+							<th>用户名</th>
+							<th>昵称</th>
+							<th>密码</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>1</td>
+							<td>ydw</td>
+							<td>袁德伟</td>
+							<td>123</td>
+							<td style="width: 50px;">
+								<button class="updateUserBtn btn btn-warning btn-xs btn-rounded" type="button">
+									<i class="fa fa-edit"></i> 修改
+								</button>
+							</td>
+							<td style="width: 50px;">
+								<button class="deleteUserBtn btn btn-danger btn-xs btn-rounded" type="button">
+									<i class="fa fa-trash"></i> 删除
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>root</td>
+							<td>管理员</td>
+							<td>root</td>
+							<td style="width: 50px;">
+								<button  class="updateUserBtn btn btn-warning btn-xs btn-rounded" type="button">
+									<i class="fa fa-edit"></i> 修改
+								</button>
+							</td>
+							<td style="width: 50px;">
+								<button class="deleteUserBtn btn btn-danger btn-xs btn-rounded" type="button">
+									<i class="fa fa-trash"></i> 删除
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>123</td>
+							<td>用户1</td>
+							<td>123</td>
+							<td style="width: 50px;">
+								<button class="updateUserBtn btn btn-warning btn-xs btn-rounded" type="button">
+									<i class="fa fa-edit"></i> 修改
+								</button>
+							</td>
+							<td style="width: 50px;">
+								<button class="deleteUserBtn btn btn-danger btn-xs btn-rounded" type="button">
+									<i class="fa fa-trash"></i> 删除
+								</button>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 添加用户的弹出框 -->
+<div id="modal-form-add" class="modal fade" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-sm-12 b-r">
+						<div class="ibox-title">
+							<h5>添加新的用户</h5>
+						</div>
+						<div class="ibox-content">
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label class="col-sm-3 control-label">用户名：</label>
+									<div class="col-sm-8">
+										<input id="addUserName" type="text" placeholder="用户名" class="form-control" maxlength="6">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-3 control-label">昵称：</label>
+									<div class="col-sm-8">
+										<input id="addNickname" type="text" placeholder="昵称" class="form-control" maxlength="6">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-3 control-label">密码：</label>
+									<div class="col-sm-8">
+										<input id="addPassword" type="text" placeholder="密码" class="form-control" maxlength="6">
+									</div>
+								</div>
+								<div>
+									<button id="addSubmitBtn" class="btn btn-primary btn-primary pull-right m-t-n-xs" type="button"><i class="fa fa-check"></i>&nbsp;提交
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 修改用户的弹出框 -->
+<div id="modal-form-update" class="modal fade" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-sm-12 b-r">
+						<div class="ibox-title">
+							<h5>修改用户信息</h5>
+						</div>
+						<div class="ibox-content">
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label class="col-sm-3 control-label">用户名：</label>
+									<div class="col-sm-8">
+										<input id="updateUsername" type="text" placeholder="用户名" class="form-control" maxlength="6">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-3 control-label">昵称：</label>
+									<div class="col-sm-8">
+										<input id="updateNickname" type="text" placeholder="昵称" class="form-control" maxlength="6">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-3 control-label">密码：</label>
+									<div class="col-sm-8">
+										<input id="updatePassword" type="text" placeholder="密码" class="form-control" maxlength="6">
+									</div>
+								</div>
+								<div>
+									<button id="updateSubmitBtn" class="btn btn-primary btn-primary pull-right m-t-n-xs" type="button"><i class="fa fa-check"></i>&nbsp;提交
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/static/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="/static/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="/static/js/content.min.js?v=1.0.0"></script>
+<script src="/static/js/plugins/iCheck/icheck.min.js"></script>
+<script src="/static/js/demo/peity-demo.min.js"></script>
+<script src="/static/js/myJS/index.js"></script>
+</body>
+</html>
