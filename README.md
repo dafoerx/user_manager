@@ -1,5 +1,8 @@
 # SpringBoot项目教学合集
 
+#### 作者
+Yuan-Programmer
+
 #### 介绍
 CSDN中的所有SpringBoot项目开源，持续更新新项目、新教学文章
 
@@ -29,9 +32,5 @@ CSDN中的所有SpringBoot项目开源，持续更新新项目、新教学文章
 
 #### 特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1.  CSDN个人主页地址：[https://blog.csdn.net/weixin_47971206](https://blog.csdn.net/weixin_47971206)
+2.  各技术教学，项目实战开发教学文章集合：[https://blog.csdn.net/weixin_47971206/article/details/121368075](https://blog.csdn.net/weixin_47971206/article/details/121368075)
