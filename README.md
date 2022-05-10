@@ -23,22 +23,9 @@ CSDN中的所有SpringBoot项目开源，持续更新新项目、新教学文章
 
 #### 安装教程
 每个项目demo下都配有md基础使用教程
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
 #### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
 
 #### 特技
