@@ -2,8 +2,13 @@ spring:
   # 数据源，连接MySQL数据库
   datasource:
     url: jdbc:mysql://localhost:3306/user?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+<<<<<<< HEAD
     username: root
     password: root
+=======
+    username: 账号
+    password: 数据库密码
+>>>>>>> fbc81354bc33d1fcde0573c03af09dc3e42f869e
     driver-class-name: com.mysql.cj.jdbc.Driver
   # JPA配置，打印sql语句
   jpa:
