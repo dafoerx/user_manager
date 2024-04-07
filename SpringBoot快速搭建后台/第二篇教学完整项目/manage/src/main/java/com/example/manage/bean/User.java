@@ -7,6 +7,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import java.util.Date;
+
+
 /**
  * FileName:    User
  * Author:      Yuan-Programmer
@@ -23,4 +26,8 @@ public class User {
     private String username;
     private String nickname;
     private String password;
+
+    private Date createdTime; // 对应数据库表中的 created_time 字段
+    private Date validUntil; // 对应数据库表中的 valid_until 字段
+    private boolean isWhiteList; // 对应数据库表中的 is_white_list 字段
 }
